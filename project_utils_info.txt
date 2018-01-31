@@ -1,5 +1,7 @@
 Templates - Bootstrap - getbootstrap.com
 
+print_r($_POST);
+print_r($_GET);
 
 
 ================
@@ -22,6 +24,10 @@ $ mysql-ctl stop
 # run the MySQL interactive shell
 $ mysql-ctl cli
 
+//=======================
+customize bootstrap
+http://bootstrap-live-customizer.com/
+
 
 //================
 
@@ -35,8 +41,10 @@ print_r($_POST);
  
 //================ search pages
 https://blackrockdigital.github.io/startbootstrap-modern-business/services.html
-https://www.sitepoint.com/turning-crawled-website-search-engine-php/
 
+** nice one
+https://www.sitepoint.com/turning-crawled-website-search-engine-php/
+**
 
 
 ///=====github

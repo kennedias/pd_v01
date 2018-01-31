@@ -2,7 +2,7 @@
 // connecting to a database
 $host = "localhost";
 // name of the database to connect to
-$database = "somos";
+$database = "puzzle";
 // mysql username to use to access the database
 $user = "kennedias";
 // database password for the username

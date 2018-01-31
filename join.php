@@ -39,7 +39,7 @@ if($_POST["submit"]=="join"){
 <html>
     <?php include("includes/head.php");?>
     <body>
-    <?php include("includes/navigation2.php");?>
+    <?php include("includes/navigation.php");?>
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-4">

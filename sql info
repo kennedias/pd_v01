@@ -1,0 +1,20 @@
+CREATE VIEW user_basicinfo_view
+AS SELECT usr.id, usr.username, usr.location, usr.picture, usr.nationality_code, nat.nationality
+FROM user usr, nationality nat
+WHERE usr.nationality_code=nat.id
+
+
+CREATE VIEW userskill_basicinfo_view
+AS SELECT usr.id, usr.username, usr.location, usr.picture, usr.nationality_code, nat.nationality
+FROM user usr, skills skl, user_skills usk
+WHERE usr.id=usk.us_id
+  AND usk.s_code=skl.s_code
+  AND skl.s_description LIKE '%A%'
+  
+CREATE VIEW userskill_basicinfo_view
+AS   SELECT usr.id, usr.username, usr.location, usr.picture, usr.nationality_code, nat.nationality, skl.s_description, usk.l_code
+FROM user usr, skills skl, user_skills usk, nationality nat
+WHERE usr.id=usk.us_id
+  AND usr.nationality_code=nat.id
+  AND usk.s_code=skl.s_code
+  AND skl.s_description LIKE '%A%'

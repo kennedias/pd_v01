@@ -1,11 +1,11 @@
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Somos 21</title>
-    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="components/jquery/dist/jquery.js"></script>
-    <script src="components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="components/typeahead/typeahead.js"></script>
-    <script src="components/js/util.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="ICON" type="image/x-icon" href='images/logo_Title.ICO' />
+    <link rel="stylesheet" type="text/css" href="myCss/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="myCss/myStyleProfile.css">
 </head>

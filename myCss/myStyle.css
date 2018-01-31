@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+html,
+body{
+    color:ghostwhite;
+    font-size:auto;
+    margin:0;
+	padding:0;
+	height: 100%;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'ABeeZee', sans-serif;
+}
+header a span{
+    margin-left: 10px;
+    color:ghostwhite;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20pt;
+}
+body p{
+    margin:8px 0 8px 0;
+}
+.container0{
+	min-height:100%;
+	position:relative;
+}
+.nav-link1{
+    color:whitesmoke!important;
+    margin-left: 10px;
+}
+.nav-link1:hover,.active{
+    transition: all .2s ease-in;
+	 color:yellow !important;
+	border-style:solid;
+	border-width: 0px 0px 5px 0px;
+	padding:1px;
+}
+.container1{
+	width:100%;
+	padding-bottom:120px;
+}
+.container{
+	height:100%;
+	margin:0 auto;
+	margin-top:15px;
+    box-sizing: border-box;
+}
+button:focus {
+    outline: 0;
+}
+
+.navbar .dropdown-menu .form-control {
+    width: 300px;
+}
+.navbar-expand-sm .navbar-nav .dropdown-menu-right{
+    right:auto;
+    left:0;
+} 
+#dropdownMenu1{
+    color:whitesmoke;
+    border: 1px solid pink;
+}
+#dropdownMenu1:hover{
+     background: #C9F299;
+}
+#dropdownMenu1:focus{
+    background: #C9F299;
+}
+.col-md-6 a:hover{
+    color: greenyellow!important;
+}
+
+footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	display:flex;
+}
+.copyRight{
+	flex:1;
+    text-align: center;
+	margin-top:20px;
+}
+.icon{
+	flex:1;
+    text-align: center;
+    margin-top: 15px;
+}
+@media screen and (max-width: 1000px) {
+	footer{	
+		display:block;
+		width:100%;
+	}
+	footer p{
+		font-size:9pt;
+	}
+	.copyRight{
+		width:100%;
+		display:block;
+		margin-top:0;
+	}
+	.icon{
+		width:100%;
+		display:block;
+		margin-top:0;
+	}
+}
+@media(min-width: 768px) {
+  .field-label-responsive {
+    padding-top: .5rem;
+    text-align: right;
+  }
+}

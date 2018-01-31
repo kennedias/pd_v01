@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+html,
+body{
+    font-size:auto;
+    margin:0;
+	padding:0;
+	height: 100%;
+    font-family: 'ABeeZee', sans-serif;
+}
+body p{
+    margin:8px 0 8px 0;
+}
+.container0{
+	min-height:100%;
+	position:relative;
+}
+header a span{
+    margin-left: 10px;
+    color:ghostwhite;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20pt;
+}
+.bg-light
+{
+    background-color: #6fa8dc !important;
+} 
+.nav-link{
+    color:black !important;
+    margin-left: 10px;
+}
+.nav-link:hover,.active{
+    transition: all .2s ease-in;
+	 color:yellow !important;
+	border-style:solid;
+	border-width: 0px 0px 5px 0px;
+	padding:1px;
+}
+.container1{
+	width:100%;
+	padding-bottom:150px;
+}
+
+.container{
+	height:100%;
+     width: 100%;
+	margin:0 auto;
+	margin-top:15px;
+	border:1px solid;
+    box-sizing: border-box;
+}
+/* Chat containers */
+.container2 {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+/* Clear floats */
+.container2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container2 img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container2 img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+}
+.form-control {
+    display: inline;
+  width: 90%;
+    float:left;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+footer{
+	position: absolute;/*help the footer stay at bottom on different screen size*/
+    width: 100%;
+    bottom: 0px;
+	background:#ff9900;
+	margin-top:15px;
+	display:flex;
+}
+.serviceInfo{
+	flex:1;
+	font-size:10pt;
+	text-align:center;
+}
+.copyRight{
+	flex:1;
+	text-align:center;
+	margin-top:20px;
+}
+.icon{
+	flex:1;
+    text-align: center;
+	box-sizing:border-box;
+	padding-top:10px;
+}
+@media screen and (max-width: 1000px) {
+	footer{	
+		display:block;
+		width:100%;
+        margin-top: 20px;
+	}
+	footer p,img{
+		font-size:9pt;
+	}
+	.serviceInfo{
+		width:100%;
+		display:block;
+		text-align:center;
+		padding:0;
+	}
+	.copyRight{
+		width:100%;
+		display:block;
+		margin-top:0;
+	}
+	.icon{
+		width:100%;
+		display:block;
+		text-align:center;
+		padding-top:0;
+	}
+	.serviceInfo p{
+		margin-top:0px;
+	}
+}

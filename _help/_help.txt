@@ -1,0 +1,5 @@
+https://pd-host-kennedias.c9users.io/phpmyadmin with the following username (and blank password):
+
+       Username: kennedias
+       
+       

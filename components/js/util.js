@@ -1,34 +1,9 @@
-$(function()
-{
-    $(document).on('click', '.btn-add', function(e)
-    {
-        e.preventDefault();
-
-        var controlForm = $('.controls form:first'),
-            currentEntry = $(this).parents('.entry:first'),
-            newEntry = $(currentEntry.clone()).appendTo(controlForm);
-
-        newEntry.find('input').val('');
-        controlForm.find('.entry:not(:last) .btn-add')
-            .removeClass('btn-add').addClass('btn-remove')
-            .removeClass('btn-success').addClass('btn-danger')
-            .html('<span class="glyphicon glyphicon-minus"></span>');
-    }).on('click', '.btn-remove', function(e)
-    {
-		$(this).parents('.entry:first').remove();
-
+$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
 		e.preventDefault();
-		return false;
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #criteria').val(param);
 	});
 });
-
-
-$(document).ready(function() {
-
-            $('input.skill').typeahead({
-                name: 'skill',
-                remote: 'skillsearch.php?query=%QUERY'
-
-            });
-
-        })
