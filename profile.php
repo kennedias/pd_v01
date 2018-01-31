@@ -110,46 +110,42 @@ if($_POST["submit"]=="profile"){
           <?php include("includes/navigation.php");?>
         </header>
         <div class="container1">
-					<div class="container">
-						 <h3> Profile</h3>
-						 <form action="profile.php" method="post">
-                         <div class="row">
-                            <div class="col-sm-6">
+		<div class="container">
+			<h3> Profile</h3>
+			<form action="profile.php" method="post">
+				<div class="row">
+                            		<div class="col-sm-6">
 				<!--			<form action="profile.php" method="post">  -->
-									<input type="radio" name="gender"
-									<?php if (isset($gender) && $gender=="F") echo "checked";?>
-									value="F">Sheila
-									<input type="radio" name="gender"
-									<?php if (isset($gender) && $gender=="M") echo "checked";?>
-									value="M">Bloke
-									<br><br>
-									Name<br>
-									<input style="width:80%;" name="name" type="text" maxlength="64" value="<?php echo htmlspecialchars($name); ?>" 
-									placeholder="... Your name"><br><br>
-									User name<br>
-									<input style="width:80%;" name="username" type="text" maxlength="64" value="<?php echo htmlspecialchars($username); ?>" 
-									placeholder="... Think about nickname that gives a clue about yourself"><br><br>
-									Date of birth
-									<input style="width:40%;" name="datebirth" type="date" value="<?php echo htmlspecialchars($datebirth); ?>"><br><br>
-									<div class="country">
-										<div class="country1">
-											<fieldset class="well">
-												<legend class="well-legend">Selecting Country</legend>
-												<select>
-													<option value=" " selected>Select</option>
-													<option value="Australia">Australia</option>
-												</select>
-											</fieldset>
-										</div>
-										<div class="city">
-											<fieldset class="well" >
-												<legend class="well-legend" >Enter your city</legend>
-												<input name="city" type="text" maxlength="40" size="45" value="<?php echo htmlspecialchars($city); ?>">
-											</fieldset>
-										</div>
-									</div>
-							<!--	</form> -->
+						<input type="radio" name="gender" <?php if (isset($gender) && $gender=="F") echo "checked";?> value="F">Sheila
+						<input type="radio" name="gender" <?php if (isset($gender) && $gender=="M") echo "checked";?> value="M">Bloke
+						<br><br>
+						Name<br>
+						<input style="width:80%;" name="name" type="text" maxlength="64" value="<?php echo htmlspecialchars($name); ?>" 
+						placeholder="... Your name"><br><br>
+						User name<br>
+						<input style="width:80%;" name="username" type="text" maxlength="64" value="<?php echo htmlspecialchars($username); ?>" 
+						placeholder="... Think about nickname that gives a clue about yourself"><br><br>
+						Date of birth
+						<input style="width:40%;" name="datebirth" type="date" value="<?php echo htmlspecialchars($datebirth); ?>"><br><br>
+						<div class="country">
+							<div class="country1">
+								<fieldset class="well">
+									<legend class="well-legend">Selecting Country</legend>
+									<select>
+										<option value=" " selected>Select</option>
+										<option value="Australia">Australia</option>
+									</select>
+								</fieldset>
 							</div>
+							<div class="city">
+								<fieldset class="well" >
+									<legend class="well-legend" >Enter your city</legend>
+									<input name="city" type="text" maxlength="40" size="45" value="<?php echo htmlspecialchars($city); ?>">
+								</fieldset>
+							</div>
+						</div>
+				<!--	</form> -->
+				</div>
 						<div class="col-sm-6">
 							<img src="images/avatar.jpg" alt="error" style="width:20%; height:20%; border:1px solid; box-sizing:border-box; float:right; margin-right:50px; margin-top:15px; padding:5px;" >
 							<div class="emailBox">
